@@ -1,0 +1,86 @@
+@{
+  Layout = "_Layout";
+}
+<div class="jumbotron">
+  <h1>Play Rock Paper Scissors!</h1>
+</div>
+
+  <div class="container">
+
+    <button type="button" id="pvp">Play PvP</button>
+    <button type="button" id="pvc">Play PvC</button>
+
+
+
+    <div id="pvpGame">
+      <form action="/Resultpvp" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 id="p1Title">Player 1:</h1>
+          <div id="p1Choice">
+            <div class="radio">
+              <label><input type="radio" name="p1" value="rock" checked=true>Rock</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="p1" value="paper">Paper</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="p1" value="scissors">Scissors</label>
+            </div>
+            <button type="button" class="btn btn-primary">Confirm</button>
+          </div>
+          <div id="p1Chose">
+            <h1>Player 1 has chosen wisely</h1>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h1 id="p2Title">Player 2:</h1>
+          <div id="p2Choice">
+            <div class="radio">
+              <label><input type="radio" name="p2" value="rock" checked=true>Rock</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="p2" value="paper">Paper</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="p2" value="scissors">Scissors</label>
+            </div>
+            <button type="button" class="btn btn-primary">Confirm</button>
+          </div>
+          <div id="p2Chose">
+            <h1>Player 2 has chosen wisely</h1>
+          </div>
+        </div>
+      </div>
+    </div> @* End of PVP section *@
+      <button type="submit" class="btn btn-success" id="btnSubmitpvp">Submit!</button>
+  </form>
+
+  <form action="/Resultpvc" method="post">
+    <div id="pvcGame">
+      <div class="row">
+          <h1 id="p1TitlePvc">Player 1:</h1>
+          <div id="p1ChoicePvc">
+            <div class="radio">
+              <label><input type="radio" name="p1" value="rock" checked=true>Rock</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="p1" value="paper">Paper</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="p1" value="scissors">Scissors</label>
+            </div>
+          </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success" id="btnSubmitpvc">Submit!</button>
+  </form>
+
+
+  </div>
+
+
+
+
+</form>

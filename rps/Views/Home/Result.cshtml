@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <div class="jumbotron">
+    <h1>@Model.CompareInputs()</h1>
+  </div>
+  <h3>Player 1 chose: @Model.GetP1()</h3>
+  <h3>Player 2 chose: @Model.GetP2()</h3>
+<br>
+  <a href="/"><button type="button" class="btn-success">Go home</button></a>
+</div>

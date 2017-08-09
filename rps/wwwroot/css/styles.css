@@ -1,0 +1,31 @@
+#p1Chose{
+  display: none;
+}
+#p2Chose{
+  display: none;
+}
+.radioComp{
+  display: none;
+}
+#btnSubmitpvp{
+  margin-top: 100px;
+  text-align: center;
+  display: none;
+  font-size: 100px;
+}
+#btnSubmitpvc{
+  margin-top: 100px;
+  text-align: center;
+  display: none;
+  font-size: 100px;
+}
+#pvpGame{
+  display: none;
+}
+#pvcGame{
+  display: none;
+}
+.container{
+text-align: center;
+
+}
